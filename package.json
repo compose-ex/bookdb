@@ -1,0 +1,18 @@
+{
+  "name": "bookdb",
+  "version": "1.0.0",
+  "description": "A simple book database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.9.1",
+    "express": "^4.9.8",
+    "express-handlebars": "^1.1.0",
+    "handlebars": "^2.0.0",
+    "mongoose": "^3.8.18"
+  }
+}

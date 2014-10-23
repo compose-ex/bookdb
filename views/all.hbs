@@ -1,0 +1,19 @@
+<table width="100%">
+  {{#if books}}
+        {{#each books}}
+            <tr>
+                <td>{{title}}</td>
+                <td>{{author}}</td>
+                <td>{{description}}</td>
+                <td>
+                    <a href="/edit/{{_id}}">Edit</a>
+                    <a href="/delete/{{_id}}">Delete</a>
+                </td>
+            </tr>
+        {{/each}}
+    {{else}}
+        <tr>
+            <td colspan="4" class="text-center">No data to display.</td>
+        </tr>
+    {{/if}}
+</table>

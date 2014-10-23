@@ -1,0 +1,9 @@
+<form action="/update/{{ id }}" method="post">
+  <label for="title">Title:</label>
+  <input type="string" size=80 id="title" name="title" value="{{ title }}"/><br/>
+  <label for="author">Author:</label>
+  <input type="string" size=80 id="author" name="author" value="{{ author }}"/><br/>
+  <label for="description">Description:</label>
+  <textarea id="description" name="description" rows=5 cols=80>{{ description }}</textarea><br/>
+  <INPUT type="submit" value="{{ action }}"><br/>
+</form>
