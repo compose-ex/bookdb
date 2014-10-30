@@ -20,11 +20,11 @@ mongoose.connect(process.env.COMPOSE_URL);
 
 var Schema = mongoose.Schema;
 
-var bookSchema = {
+var bookSchema = new Schema({
   title: String,
   author: String,
   description: String
-};
+});
 
 var Book = mongoose.model("Book", bookSchema);
 
